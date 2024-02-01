@@ -32,8 +32,8 @@
   <script src="js/hal.js" charset="utf-8"></script>
 
 </head>
-
-<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('guillaume-touya');">
+<body id="page-top" onload="getJournalPublicationsAuthor('sami-guembour');getConfPublicationsAuthor('sami-guembour');getBookPublicationsAuthor('sami-guembour');
+getWorkshopPublicationsAuthor('sami-guembour');getOtherPublicationsAuthor('sami-guembour');getInvitedTalksAuthor('sami-guembour');">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <select class="selectpicker" data-width="fit">
@@ -289,17 +289,65 @@
       </div>
     </section>
 
+	   <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+<!--
+        <span id="pubACL"><div class="subheading mb-3 mt-3">[ACL] Journals</div></span>
+        <span id="pubACLN"><div class="subheading mb-3 mt-3">[ACLN] Journals</div></span>
+        <span id="pubASCL"><div class="subheading mb-3 mt-3">[ASCL] Others</div></span>
+        <span id="pubACTI"><div class="subheading mb-3 mt-3">[ACTI] Conferences</div></span>
+        <span id="pubACTN"><div class="subheading mb-3 mt-3">[ACTN] Conferences</div></span>
+        <span id="pubCOM"><div class="subheading mb-3 mt-3">[COM] Conferences</div></span>
+        <span id="pubOS"><div class="subheading mb-3 mt-3">[OS] Books and Chapters</div></span>
+        <span id="pubDO"><div class="subheading mb-3 mt-3">[DO] Books and Chapters</div></span>
+        <span id="pubAFF"><div class="subheading mb-3 mt-3">[AFF] Posters</div></span>
+        <span id="pubAP"><div class="subheading mb-3 mt-3">[AP] Preprints</div></span>
+        <span id="pubTH"><div class="subheading mb-3 mt-3">[TH] Dissertations</div></span>
+        <span id="pubINV"><div class="subheading mb-3 mt-3">[INV] Invited Talks</div></span>
+        <span id="pubPV"><div class="subheading mb-3 mt-3">[PV] Popularization</div></span>
+-->
+        <!-- provide a subset of the publications based on a keyword -->
+        <!--
+        <span id="pubGeneralisation"><div class="subheading mb-3 mt-3">Généralisation</div></span>
+	<script> getKeywordPublicationsAuthorStartYear('guillaume-touya', 'Généralisation', 2006, "pubGeneralisation"); </script>
+        -->
+	        <div class="subheading mb-3 mt-3">Journals</div>
+        <ol id="pubJ" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Conferences</div>
+        <ol id="pubC" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Books and Chapters</div>
+        <ol id="pubB" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Workshops and Posters</div>
+        <ol id="pubW" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Other Publications (Technical Reports, Dissertations, Dissemination)</div>
+        <ol id="pubO" class="sub">
+        </ol>      
+	      
+      </div>
+    </section>
+
+    <section class="section appear clearfix p-3 p-lg-5">
+      <div class="w-100">
+        <h2 class="mb-5 mt-5">Invited Talks</h2>
+        <ol id="talks" class="sub">
+        </ol>
+      </div>
+    </section>
+
     <hr class="m-0">
-
-
-
 
         <div class="subheading mb-3 mt-3 lang-en">Teaching</div>
 	  <div class="subheading mb-3 mt-3 lang-fr">Enseignements</div>
-
-
-
-
 
     </section>
 
